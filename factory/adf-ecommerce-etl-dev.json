@@ -1,0 +1,15 @@
+{
+	"name": "adf-ecommerce-etl-dev",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c30719b9-3dae-45f4-9c93-059faf3409d6",
+		"tenantId": "4d7f231b-8677-4565-8cb6-812339039e5b"
+	}
+}

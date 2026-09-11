@@ -1,0 +1,7 @@
+{
+	"name": "SelfHostedIntegrationRuntime",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "We connect ssms to adf"
+	}
+}

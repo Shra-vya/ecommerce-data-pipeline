@@ -1,0 +1,13 @@
+{
+	"name": "DS_GET_CSV_EXCEL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_GET_CSV_EXCEL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

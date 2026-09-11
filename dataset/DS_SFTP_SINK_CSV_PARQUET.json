@@ -1,0 +1,24 @@
+{
+	"name": "DS_SFTP_SINK_CSV_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SFTP_SINK_CSV_PARQUET",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@concat(\n    'sftp/',\n    formatDateTime(utcNow(), 'yyyy'), '/',\n    formatDateTime(utcNow(),'MM'), '/',\n    formatDateTime(utcNow(), 'dd')\n)",
+					"type": "Expression"
+				},
+				"fileSystem": "input"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

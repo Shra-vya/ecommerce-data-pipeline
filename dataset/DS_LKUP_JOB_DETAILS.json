@@ -1,0 +1,13 @@
+{
+	"name": "DS_LKUP_JOB_DETAILS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_LKUP_JOB_DETAILS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

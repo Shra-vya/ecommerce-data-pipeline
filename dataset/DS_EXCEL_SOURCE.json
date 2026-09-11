@@ -1,0 +1,52 @@
+{
+	"name": "DS_EXCEL_SOURCE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_EXCEL_SOURCE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "olist_order_reviews_dataset",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "olist_order_reviews_dataset.xlsx",
+				"folderPath": "EXCEL",
+				"fileSystem": "input"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "review_id",
+				"type": "String"
+			},
+			{
+				"name": "order_id",
+				"type": "String"
+			},
+			{
+				"name": "review_score",
+				"type": "String"
+			},
+			{
+				"name": "review_comment_title",
+				"type": "String"
+			},
+			{
+				"name": "review_comment_message",
+				"type": "String"
+			},
+			{
+				"name": "review_creation_date",
+				"type": "String"
+			},
+			{
+				"name": "review_answer_timestamp",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

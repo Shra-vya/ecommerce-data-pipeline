@@ -1,0 +1,13 @@
+{
+	"name": "DS_LKUP_JOB_DETAILS_EXCEL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_JOB_DETAILS_EXCEL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

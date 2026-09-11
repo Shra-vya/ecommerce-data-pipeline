@@ -1,0 +1,27 @@
+{
+	"name": "Tr_sample_csv",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL1_Master",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"Trigger": "Tr_sample_csv"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2026-09-09T23:59:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

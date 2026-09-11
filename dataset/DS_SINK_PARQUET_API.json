@@ -1,0 +1,45 @@
+{
+	"name": "DS_SINK_PARQUET_API",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_PARQUET_API",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@concat(\n    'api/',\n    formatDateTime(utcNow(), 'yyyy'), '/',\n    formatDateTime(utcNow(),'MM'), '/',\n    formatDateTime(utcNow(), 'dd')\n)",
+					"type": "Expression"
+				},
+				"fileSystem": "input"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "customer_unique_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "customer_zip_code_prefix",
+				"type": "UTF8"
+			},
+			{
+				"name": "customer_city",
+				"type": "UTF8"
+			},
+			{
+				"name": "customer_state",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

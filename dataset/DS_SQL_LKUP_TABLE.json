@@ -1,0 +1,13 @@
+{
+	"name": "DS_SQL_LKUP_TABLE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_LKUP_TABLE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

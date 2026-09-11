@@ -1,0 +1,105 @@
+{
+	"name": "DS_JSON_SOURCE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SOURCE_JSON",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "jsontest.json",
+				"folderPath": "JSON",
+				"fileSystem": "input"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"_id": {
+					"type": "string"
+				},
+				"index": {
+					"type": "integer"
+				},
+				"guid": {
+					"type": "string"
+				},
+				"isActive": {
+					"type": "boolean"
+				},
+				"balance": {
+					"type": "string"
+				},
+				"picture": {
+					"type": "string"
+				},
+				"age": {
+					"type": "integer"
+				},
+				"eyeColor": {
+					"type": "string"
+				},
+				"name": {
+					"type": "string"
+				},
+				"gender": {
+					"type": "string"
+				},
+				"company": {
+					"type": "string"
+				},
+				"email": {
+					"type": "string"
+				},
+				"phone": {
+					"type": "string"
+				},
+				"address": {
+					"type": "string"
+				},
+				"about": {
+					"type": "string"
+				},
+				"registered": {
+					"type": "string"
+				},
+				"latitude": {
+					"type": "number"
+				},
+				"longitude": {
+					"type": "number"
+				},
+				"tags": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"friends": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "integer"
+							},
+							"name": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"greeting": {
+					"type": "string"
+				},
+				"favoriteFruit": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
